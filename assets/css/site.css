@@ -72,15 +72,15 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
 .site-header { position: relative; z-index: 5; border-bottom: 1px solid #e8f0f7; background: #fff; }
 .nav-wrap { display: flex; min-height: 76px; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 10px; color: var(--navy); }
-.brand-mark { color: var(--blue); font-family: Manrope, sans-serif; font-size: 2rem; font-weight: 800; letter-spacing: -.12em; line-height: 1; }
+.brand-mark { color: var(--blue); font-family: Manrope, sans-serif; font-size: 2.15rem; font-weight: 800; letter-spacing: -.12em; line-height: 1; }
 .brand-copy { display: grid; line-height: 1.15; }
-.brand-copy strong { font-family: Manrope, sans-serif; font-size: .86rem; font-weight: 800; letter-spacing: .045em; }
-.brand-copy span { margin-top: 4px; color: var(--muted); font-size: .55rem; font-weight: 700; letter-spacing: .31em; }
+.brand-copy strong { font-family: Manrope, sans-serif; font-size: .94rem; font-weight: 800; letter-spacing: .045em; }
+.brand-copy span { margin-top: 4px; color: #526d88; font-size: .61rem; font-weight: 800; letter-spacing: .31em; }
 .site-nav { display: flex; align-items: center; gap: clamp(14px, 2.1vw, 28px); }
-.site-nav a { position: relative; padding: 10px 0; color: #425b75; font-size: .78rem; font-weight: 600; white-space: nowrap; }
+.site-nav a { position: relative; padding: 10px 0; color: #314d68; font-size: .82rem; font-weight: 700; white-space: nowrap; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--blue); }
 .site-nav a[aria-current="page"]::after { position: absolute; right: 0; bottom: 3px; left: 0; height: 2px; background: var(--blue); content: ""; }
-.nav-cta { min-height: 40px; padding: 0 17px; font-size: .78rem; }
+.nav-cta { min-height: 40px; padding: 0 17px; font-size: .82rem; }
 .menu-toggle { display: none; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; background: #fff; color: var(--navy); cursor: pointer; font-size: 1.25rem; }
 
 /* Home page */
@@ -90,7 +90,7 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
   min-height: 490px;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(90deg, rgb(255 255 255 / 97%) 0%, rgb(255 255 255 / 82%) 39%, rgb(255 255 255 / 5%) 75%), url("../images/hero-reference.jpg") right center / auto 100% no-repeat, url("../images/solar-panels.jpg") center / cover no-repeat;
+  background: linear-gradient(90deg, rgb(255 255 255 / 97%) 0%, rgb(255 255 255 / 82%) 39%, rgb(255 255 255 / 5%) 75%), linear-gradient(135deg, rgb(7 139 214 / 16%), rgb(8 44 88 / 12%)), url("../images/hero-reference.jpg") right center / auto 100% no-repeat, url("../images/solar-panels.jpg") center / cover no-repeat;
 }
 .hero::after { position: absolute; top: 0; right: 0; width: 11%; height: 100%; background: linear-gradient(135deg, transparent 0 30%, rgb(0 154 229 / 82%) 30% 54%, transparent 54%); content: ""; }
 .hero-content { position: relative; z-index: 1; max-width: 620px; margin-left: max(24px, calc((100% - 1160px) / 2)); margin-right: auto; padding: 72px 0; text-align: left; }
@@ -246,7 +246,7 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
 
 @media (max-width: 920px) {
   .site-nav { gap: 13px; }
-  .site-nav a { font-size: .71rem; }
+  .site-nav a { font-size: .75rem; }
   .nav-cta { display: none; }
   .intro-grid { gap: 32px; }
   .solutions-grid { grid-template-columns: repeat(2, 1fr); }
@@ -262,10 +262,10 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
   .menu-toggle { display: inline-grid; place-items: center; }
   .site-nav { position: absolute; top: 100%; right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 9px 18px 17px; border-bottom: 1px solid var(--line); background: #fff; box-shadow: 0 14px 20px rgb(10 42 72 / 10%); }
   .site-nav.is-open { display: grid; }
-  .site-nav a { padding: 12px 6px; border-bottom: 1px solid #edf2f7; font-size: .9rem; }
+  .site-nav a { padding: 12px 6px; border-bottom: 1px solid #edf2f7; font-size: .94rem; font-weight: 700; }
   .site-nav a[aria-current="page"]::after { right: auto; bottom: 6px; width: 25px; }
-  .hero { min-height: 525px; align-items: end; background-image: linear-gradient(0deg, rgb(255 255 255 / 98%), rgb(255 255 255 / 91%) 40%, rgb(255 255 255 / 15%) 100%), url("../images/hero-reference.jpg"), url("../images/solar-panels.jpg"); background-position: center, right center, center; background-size: 100% 100%, auto 66%, cover; background-repeat: no-repeat; }
-  .hero::after { width: 18%; }
+  .hero { min-height: 525px; align-items: end; background-image: linear-gradient(0deg, rgb(255 255 255 / 98%), rgb(255 255 255 / 91%) 40%, rgb(255 255 255 / 15%) 100%), linear-gradient(135deg, rgb(7 139 214 / 16%), rgb(8 44 88 / 12%)), url("../images/hero-reference.jpg"), url("../images/solar-panels.jpg"); background-position: center, center, right center, center; background-size: 100% 100%, 100% 100%, auto 66%, cover; background-repeat: no-repeat; }
+  .hero::after { display: none; }
   .hero-content { margin-inline: auto; padding: 190px 0 39px; }
   .hero h1 { font-size: clamp(2.35rem, 11vw, 3.4rem); }
   .hero-copy { font-size: .91rem; }
@@ -306,8 +306,9 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
 }
 @media (max-width: 390px) {
   .container { width: calc(100% - 28px); }
-  .brand-copy strong { font-size: .76rem; }
-  .brand-mark { font-size: 1.8rem; }
+  .brand-copy strong { font-size: .82rem; }
+  .brand-copy span { font-size: .58rem; }
+  .brand-mark { font-size: 1.95rem; }
   .button { padding-inline: 16px; font-size: .8rem; }
   .pillar { padding-inline: 6px; font-size: .69rem; }
   .solutions-grid { grid-template-columns: 1fr 1fr; }
