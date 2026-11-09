@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="310" viewBox="0 0 900 310">
+  <rect width="900" height="310" fill="#eaf2e7"/>
+  <path d="M0 75 235 20l190 45 188-44 287 54M-20 240l250-64 182 56 194-57 328 66M122 0l44 104-37 91 57 115M376-10l-18 83 63 77-41 91 42 75M660-5l-43 92 44 77-26 72 39 85" fill="none" stroke="#d7e4d4" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M0 75 235 20l190 45 188-44 287 54M-20 240l250-64 182 56 194-57 328 66M122 0l44 104-37 91 57 115M376-10l-18 83 63 77-41 91 42 75M660-5l-43 92 44 77-26 72 39 85" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M0 154c128-46 215-16 318 17s179 28 271-22 187-43 311-9v46c-128-39-217-41-297 8s-175 58-302 17S94 171 0 204z" fill="#b9dbe8"/>
+  <path d="M0 154c128-46 215-16 318 17s179 28 271-22 187-43 311-9" fill="none" stroke="#fff" stroke-width="5"/>
+  <g transform="translate(446 139)">
+    <path d="M0 62C-4 55-32 24-32 0a32 32 0 1 1 64 0c0 24-28 55-32 62Z" fill="#078bd6"/>
+    <circle cy="-1" r="11" fill="#fff"/>
+  </g>
+  <text x="44" y="52" fill="#47725f" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">KENYA</text>
+</svg>
