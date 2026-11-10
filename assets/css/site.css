@@ -23,6 +23,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img { display: block; width: 100%; object-fit: cover; }
+.crop-side-left { object-position: left center; }
+.crop-side-right { object-position: right center; }
+.crop-bottom { object-position: center 30%; }
+.crop-side-right.crop-bottom { object-position: right 30%; }
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
@@ -136,6 +140,7 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .project-card { overflow: hidden; border: 1px solid var(--line); border-radius: 11px; background: #fff; }
 .project-card img { height: 190px; transition: transform .4s; }
+.project-card img.home-infrastructure-photo { object-position: center 28%; }
 .project-card video { display: block; width: 100%; height: 190px; background: #0b2947; object-fit: cover; }
 .project-card:hover img { transform: scale(1.035); }
 .card-visual { display: grid; place-items: center; overflow: hidden; background: radial-gradient(circle at 76% 18%, rgb(18 162 237 / 45%), transparent 36%), linear-gradient(135deg, #0b315d, #087cbd); color: #fff; }
@@ -196,6 +201,8 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
 .division-grid, .insight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .division-card { overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
 .division-card img, .division-card video { height: 205px; }
+.division-card .division-photo--construction { object-position: center 68%; }
+.division-card .division-photo--supplies { object-position: center 68%; }
 .division-card video { display: block; width: 100%; background: #0b2947; object-fit: cover; }
 .division-card > div { padding: 20px; }
 .division-card h3 { margin-bottom: 8px; color: var(--navy); font-size: 1.05rem; }
@@ -292,6 +299,7 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
   .story-feature > img { height: 210px; }
   .story-feature-copy { padding: 22px; }
   .feature-photos { height: auto; grid-template-columns: 1fr; }
+  .photo-feature--crop { height: 220px; }
   .photo-feature { min-height: 220px; }
   .photo-stack { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 1fr; }
   .photo-stack .photo-feature { min-height: 115px; }
