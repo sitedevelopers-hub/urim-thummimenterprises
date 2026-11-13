@@ -227,7 +227,7 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
 .check-list { display: grid; gap: 12px; margin: 21px 0; padding: 0; list-style: none; }
 .check-list li { display: flex; gap: 10px; color: var(--muted); font-size: .88rem; }
 .check-list li::before { color: var(--blue); content: "\2713"; font-weight: 800; }
-.contact-section { padding: 45px 0 58px; }
+.contact-section { padding: 45px 0 58px; background: radial-gradient(1100px 420px at 12% -10%, rgb(18 162 237 / 16%), transparent 62%), radial-gradient(900px 380px at 96% 8%, rgb(8 44 88 / 10%), transparent 60%), linear-gradient(180deg, #f2f9fe 0%, #e9f4fc 52%, #f6fbff 100%); border-bottom: 1px solid var(--line); }
 .contact-grid { display: grid; grid-template-columns: .92fr 1.08fr; align-items: start; gap: 38px; }
 .contact-grid > div > h2 { margin-bottom: 8px; font-size: 1.8rem; }
 .contact-intro { margin-bottom: 19px; color: var(--muted); font-size: .87rem; }
@@ -240,6 +240,11 @@ h2 { margin-bottom: 12px; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.45
 .contact-card .contact-email-link { display: inline-flex; min-height: 34px; align-items: center; margin-top: 3px; padding: 6px 10px; border-radius: 6px; background: #eaf6fd; color: #087cbd; font-size: .81rem; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .contact-card .contact-email-link:hover { background: #d7edfa; color: #064e78; }
 .contact-card .contact-email-link:focus-visible { border-radius: 2px; outline: 2px solid var(--blue); outline-offset: 3px; }
+.contact-card .contact-email-link { max-width: 100%; overflow-wrap: anywhere; }
+.contact-email-icon, .contact-email-go { flex: 0 0 auto; font-size: .78em; opacity: .8; }
+.contact-email-copy { display: inline-flex; min-height: 30px; align-items: center; margin-top: 7px; padding: 4px 11px; border: 1px solid #bcd9ee; border-radius: 999px; background: #fff; color: #087cbd; cursor: pointer; font-size: .74rem; font-weight: 700; }
+.contact-email-copy:hover { background: #eaf6fd; border-color: #087cbd; }
+.contact-email-copy:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .contact-map { position: relative; display: block; height: 154px; margin-top: 13px; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: #e7f1e7; }
 .contact-map > img { height: 100%; }
 .map-label { position: absolute; right: 9px; bottom: 9px; left: 9px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 12px; border: 1px solid rgb(223 235 244 / 85%); border-radius: 8px; background: rgb(255 255 255 / 96%); }
